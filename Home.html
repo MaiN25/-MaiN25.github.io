@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <title> MAI NAOR</title>
+</head>
+<body>
+    <div class="header-top">
+        <svg viewBox="0 0 960 300">
+            <symbol id="s-text">
+                <text text-anchor="middle" x="50%" y="80%">Mai Naor </text>
+                <text text-anchor="middle" x="52%" y="80%">Mai Naor </text>
+            </symbol>
+            <g class="g-ants">
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+            </g>
+        </svg>
+    </div>
+    <nav class="header-nav">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Resume.html">About</a></li>
+            <li><a href="Portfolio.html">Portfolio</a></li>
+        </ul>
+    </nav>
+
+    <div class="video-container">
+        <video id="video-bg" autoplay loop muted>
+            <source src="Img/MyProjects.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div id="backdrop"></div>
+    <div id="text">
+        <p>Welcome to my website! I'm a passionate programmer specializing in game development and design experience. Currently pursuing a Bachelor of Science in Art and Entertainment Technologies with a minor in Computer Science at The University of Texas at Austin. Passionate about combining my problem-solving approach, out-of-the-box thinking, and experience with a wide range of technologies. Eager to learn new skills and gain more experience.</p>
+    </div>
+    <div id="inspirational-quote">
+        <p>"You are never too young to start making a difference, and you are never too old to make a change."</p>
+        <p>-Unknown</p>
+    </div>
+    <section id="contact">
+        <h1 class="section-header">Contact</h1>
+        <div class="contact-wrapper">
+            <!-- Left contact page -->
+            <form id="contact-form" class="topBefore">
+
+                <input id="name" type="text" placeholder="NAME">
+                <input id="email" type="text" placeholder="E-MAIL">
+                <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+                <input id="submit" type="submit" value="SEND!">
+
+            </form>
+               
+            <!-- Right contact page -->
+            <div class="direct-contact-container">
+                <ul class="contact-list">
+                    <li class="list-item">
+                        <i>
+                            <img src="https://www.freeiconspng.com/uploads/address-location-marker-pin-place-point-pointer-icon--icon--0.png" width="32" height="32" />
+                            <span class="place">Austin, Texas</span>
+                        </i>
+                    </li>
+                    <li class="list-item">
+                        <i>
+                            <img src="https://www.freeiconspng.com/thumbs/telephone-icon/mobile-phone-icon-phone-telephone-icon-22.png" width="32" height="32" />
+                            <span class="phone">
+                                <a href="512-214-0217" title="Give me a call">(512) 214-0217</a>
+                            </span>
+                        </i>
+                    </li>
+                    <li class="list-item">
+                        <i>
+                            <img src="https://cdn4.iconfinder.com/data/icons/simplicity-vector-icon-set/512/mail.png" width="32" height="32" />
+                            <span class="gmail">
+                                <a href="mailto:mai.naor08@gmail.com" title="Send me an email">mai.naor08@gmail.com</a>
+                            </span>
+                        </i>
+                    </li>
+                </ul>
+                <hr>
+                    <ul class="social-icons">
+                    <li>
+                        <a href="https://github.com/MaiN25" target="_blank">
+                            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="48" height="48">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.linkedin.com/in/mainaor" target="_blank">
+                            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="48" height="48">
+                        </a>
+                    </li>
+                    </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+<footer>
+    <div class="copyright"> Created by Mai Naor &copy; ALL OF THE RIGHTS RESERVED</div>
+</footer>
+
+
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Montserrat);
+    @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+    svg {
+        display: block;
+        font: 10.5em 'Montserrat';
+        width: 960px;
+        height: 300px;
+        margin: 0 auto;
+    }
+
+    .text-copy {
+        fill: none;
+        stroke: white;
+        stroke-dasharray: 6% 29%;
+        stroke-width: 5px;
+        animation: stroke-offset 5.5s infinite linear;
+    }
+
+        .text-copy:nth-child(1) {
+            stroke: #4D163D;
+            animation-delay: -1s;
+        }
+
+        .text-copy:nth-child(2) {
+            stroke: #840037;
+            animation-delay: -2s;
+        }
+
+        .text-copy:nth-child(3) {
+            stroke: #BD0034;
+            animation-delay: -3s;
+        }
+
+        .text-copy:nth-child(4) {
+            stroke: #BD0034;
+            animation-delay: -4s;
+        }
+
+        .text-copy:nth-child(5) {
+            stroke: #FDB731;
+            animation-delay: -5s;
+        }
+
+    @keyframes stroke-offset {
+        100% {
+            stroke-dashoffset: -35%;
+        }
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #000000;
+        color: #000000;
+        padding: 70px;
+    }
+
+
+    .header-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+        .header-top h1 {
+            margin: 0;
+            font-size: 72px;
+        }
+
+    .header-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+        .header-nav ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header-nav li {
+            margin: 0 20px;
+        }
+
+        .header-nav a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+            .header-nav a:hover {
+                color: #33cccc;
+            }
+
+    .video-container {
+        position: relative;
+    }
+
+    #video-bg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: auto;
+        height: auto;
+    }
+
+    #backdrop {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("Img/MyProjects.mp4");
+        background-color: black;
+        background-size: cover;
+    }
+
+    body {
+        background-color: #000f;
+        color: #FFFFFF;
+        font-family: Arial, sans-serif;
+        height: fit-content;
+        width: fit-content;
+        overflow-x: hidden;
+        -webkit-filter: brightness(70%);
+        filter: brightness(70%);
+    }
+
+    #text {
+        position: relative;
+        top: auto;
+        left: 50%;
+        color: white;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        text-shadow: 1px 1px #333;
+        width: 80%;
+    }
+
+        #text p {
+            font-size: 36px;
+            line-height: 3;
+            padding-inline: 4px 7px ;
+            transform: translateY(40%);
+        }
+
+    @media screen and (max-width: 767px) {
+        #text {
+            font-size: 16px;
+            width: 90%;
+        }
+    }
+
+    #inspirational-quote {
+        position: relative;
+        text-align: center;
+        font-style: italic;
+    }
+
+        #inspirational-quote p:first-child {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        #inspirational-quote p:last-child {
+            font-size: 18px;
+            font-style: italic;
+        }
+
+    /* CSS for Contact Form */
+
+    form {
+        position: static;
+        width: 500px;
+        margin: 75px auto 75px -150px; /*top, right bottom left*/
+    }
+
+    input {
+        font-family: 'Lato', sans-serif;
+        font-size: 0.875em;
+        width: 470px;
+        height: 50px;
+        padding: 0px 15px 0px 15px;
+        background: transparent;
+        outline: none;
+        color: #726659;
+        border: solid 1px #b3aca7;
+        border-bottom: none;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out; /* for Safari and Chrome */
+    }
+
+        input:hover {
+            background: #b3aca7;
+            color: #e2dedb;
+        }
+
+    textarea {
+        width: 470px;
+        max-width: 470px;
+        height: 110px;
+        max-height: 110px;
+        padding: 15px;
+        background: transparent;
+        outline: none;
+        color: #726659;
+        font-family: 'Lato', sans-serif;
+        font-size: 0.875em;
+        border: solid 1px #b3aca7;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out; /* for Safari and Chrome */
+    }
+
+        textarea:hover {
+            background: #b3aca7;
+            color: #e2dedb;
+        }
+
+    #submit {
+        width: 502px;
+        padding: 0;
+        margin: -50px 0px 0px 0px;
+        font-family: 'Lato', sans-serif;
+        font-size: 0.875em;
+        color: #b3aca7;
+        outline: none;
+        cursor: pointer;
+        border: solid 1px #b3aca7;
+        border-top: none;
+    }
+
+        #submit:hover {
+            color: #e2dedb;
+        }
+
+
+    /* Center the form section */
+    #contact-form {
+        margin-right: 0 auto;
+        width: 100%;
+    }
+
+    #contact {
+        width: 100%;
+        height: 100%;
+        font-size: 18px;
+        color: #333;
+    }
+
+    .section-header {
+        text-align: center;
+        margin: 0 auto;
+        padding: 40px 0;
+        font: 300 60px 'Oswald', sans-serif;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    .contact-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 20px;
+        max-width: 840px;
+    }
+
+
+    /* Begin Right Contact Page */
+    .direct-contact-container {
+        max-width: fit-content;
+    }
+
+    /* Location, Phone, Email Section */
+    .contact-list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .list-item {
+        margin-top: 60px;
+        margin-bottom: 25px;
+        align-items: normal;
+    }
+
+    .contact-text {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+        .contact-text.phone a {
+            color: #333;
+        }
+
+        .contact-text.gmail a {
+            color: #333;
+        }
+
+    .place {
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+
+    .phone {
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+
+    .gmail {
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+
+    .contact-text a {
+        color: #bbb;
+        text-decoration: none;
+    }
+
+        .contact-text a:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+
+    .social-icons {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+        .social-icons li {
+            margin: 0 10px;
+        }
+
+            .social-icons li:last-child {
+                margin-right: 0;
+            }
+
+        .social-icons img {
+            width: 48px;
+            height: 48px;
+        }
+
+    @media screen and (max-width: 767px) {
+        #contact {
+            font-size: 16px;
+        }
+
+        .section-header {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .contact-text {
+            font-size: 16px;
+            margin-left: 5px;
+        }
+
+        .social-icons img {
+            width: 36px;
+            height: 36px;
+        }
+    }
+
+    .copyright {
+        font: 200 14px 'Oswald', sans-serif;
+        color: #555;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    hr {
+        border-color: rgba(255,255,255,.6);
+    }
+
+    footer {
+        background-color: #000000;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+        /* Style for the footer text */
+        footer p {
+            margin: 0;
+            font-size: 18px;
+            text-align: center;
+        }
+</style>
+<script>
+    // Initialize EmailJS with your user ID 
+    emailjs.init('80CZwfL0gKK0BYm5h');
+    // Get a reference to the form element 
+    const form = document.querySelector('#contact-form');
+    // Add an event listener for the submit event 
+    form.addEventListener('submit', (e) => {
+        // Prevent the default form submission behavior 
+        e.preventDefault();
+        // Get the form data as an object 
+        const formData = { name: e.target.elements.name.value, email: e.target.elements.email.value, message: e.target.elements.message.value };
+        // Send the email using EmailJS with your service ID and template ID 
+        emailjs.send("service_awy7mct", "template_klvujjj", formData).then((response) => {
+            // Display a success message or do something else 
+            alert('Email sent successfully!');
+        }).catch((error) => { // Display an error message or do something else 
+            alert('Something went wrong: ' + error);
+        }); // Clear the form fields 
+        e.target.reset();
+    });
+
+</script>
