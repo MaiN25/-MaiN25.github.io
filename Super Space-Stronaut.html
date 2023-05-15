@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @font-face {
+            font-family: AstroSpace;
+            src: url(Fonts/AstroSpace-0Wl3o.otf);
+        }
+
+        button {
+            background: none;
+            border: none;
+        }
+
+        .back-btn {
+            display: flex;
+            justify-content: space-between; /* Optional, use any other value as per requirement */
+            align-items: center; /* Optional, use any other value as per requirement */
+        }
+
+        .back-link {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+            .back-link:hover {
+                text-decoration: underline;
+            }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom:40px;
+
+        }
+
+        .infoContainer {
+            width: 50%;
+            margin-right: 50px;
+        }
+
+
+
+        html {
+            background: no-repeat;
+            background-image: url("Img/BackgroundPages2.png");
+            background-size: cover;
+            background-position: center center;
+        }
+
+        h1 {
+            font: 56px "AstroSpace";
+            text-align: center;
+            color: white;
+        }
+
+        .description {
+            margin-left: 20px;
+            font-size: 20px;
+            color: silver;
+            text-align: justify;
+        }
+            .description h2 {
+                text-align: center;
+                text-decoration: underline;
+                font-size: 28px;
+                font-weight: bold;
+            }
+
+            .description p {
+                font-size: 20px;
+            }
+
+        body {
+            font-family: 'AstroSpace';
+            margin: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+        ul 
+        {
+            display: block;
+        }
+            ul li {
+                margin-bottom: 6px;
+            }
+            /* Position the image container (needed to position the left and right arrows) */
+     .imageContainer {
+         position: relative;
+         width: 50%;
+         margin-right: 50px;
+         margin-top: 5%;
+     }
+
+        /* Hide the images by default */
+        .mySlides {
+            display: none;
+        }
+
+        /* Add a pointer when hovering over the thumbnail images */
+        .cursor {
+            cursor: pointer;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 40%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover,
+            .next:hover {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* Container for image text */
+        .caption-container {
+            text-align: center;
+            background-color: #222;
+            padding: 2px 16px;
+            color: white;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Six columns side by side */
+        .column {
+            float: left;
+            width: 14.28571428571429%;
+        }
+
+        /* Add a transparency effect for thumnbail images */
+        .demo {
+            opacity: 0.6;
+        }
+
+            .active,
+            .demo:hover {
+                opacity: 1;
+            }
+
+        .links {
+            display: flex;
+            justify-content: space-between; /* Optional, use any other value as per requirement */
+            align-items: center; /* Optional, use any other value as per requirement */
+        }
+
+            .links a {
+                text-decoration: none; /* Optional, use any other value as per requirement */
+                margin-right: 20px; /* Optional, use any other value as per requirement */
+            }
+
+                .links a:last-child {
+                    margin-right: 0; /* Optional, use any other value as per requirement */
+                }
+
+        .copyright {
+            font: 200 14px 'Oswald', sans-serif;
+            color: #555;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+        /* Style for the footer section */
+        footer {
+            background-color: #000000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            bottom: 0;
+            height: 100%;
+        }
+
+            /* Style for the footer text */
+            footer p {
+                margin: 0;
+                font-size: 18px;
+                text-align: center;
+            }
+    </style>
+</head>
+<body>
+    <h1 style="text-shadow: 5px 5px silver;">Super Space-Stronaut</h1>
+    <div class="container">
+        <button class="back-btn">
+            <img src="https://icon-library.com/images/back-icon-png/back-icon-png-16.jpg" style="width:40px">
+            <a href="Portfolio.html" class="back-link">Back to Portfolio</a>
+        </button>
+        <div class="infoContainer">
+            <div class="description">
+                <h2>About the game</h2>
+                <p>
+                    I created a  2D Platformer project - Super Space-Stronaut while participating in the MSU Game Design and Development with Unity 2020 Specialization. I developed this game using
+                    the assets and guidance given during the lectures.
+
+                    <h2>The modifications I added or chnage in the game are the following</h2>
+                    <ul>
+                        <li>Added two more levels.</li>
+                        <li>Modified the level made during the lectures.</li>
+                        <li>Added new enemies (flying enemies).</li>
+                        <li>Added another requirement for winning (the need to defeat a certain amount of enemies).</li>
+                        <li>Added a score increment each time an enemy is killed.</li>
+                    </ul>
+
+                    <h2>Game Instructions</h2>
+                    <ul>
+                        <li>The player controls would be both the keyboard arrows and WSAD.</li>
+                        <li>The player would jump once you press the ENTER key.</li>
+                        <li>To kill the enemies, you should jump on their heads.</li>
+                        <li>In order to pass the new levels (2&3): you need to kill four enemies AND pick up the door key to win.</li>
+                    </ul>
+                </p>
+            </div>
+            <div>
+                <a href="https://mainaor.itch.io/2d-platformer" style="text-align: center; color: black">
+                    <h2>Play the game</h2>
+                </a>
+            </div>
+        </div>
+
+        <div class="imageContainer">
+            <div class="mySlides">
+                <div class="numbertext">1 / 7</div>
+                <img src="Img/2D Platformer/Main Menu.png" style="width:100%" />
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">2 / 7</div>
+                <img src="Img/2D Platformer/In Game View - Level 1.png" style="width:100%" />
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">3 / 7</div>
+                <img src="Img/2D Platformer/In Game View - Level 1(1).png" style="width:100%" />
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">4 / 7</div>
+                <img src="Img/2D Platformer/In Game View - Level 1(2).png" style="width:100%" />
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">5 / 7</div>
+                <img src="Img/2D Platformer/In Game View - Level 2.png" style="width:100%" />
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">6 / 7</div>
+                <img src="Img/2D Platformer/In Game View - Level 3.png" style="width:100%" />
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">7 / 7</div>
+                <img src="Img/2D Platformer/In Game View - Level 3(1).png" style="width:100%" />
+            </div>
+           
+            <a class="prev" onclick="plusSlides(-1)">
+                <img src="https://icon-library.com/images/back-icon-png/back-icon-png-16.jpg" style="width:40px">
+
+            </a>
+            <a class="next" onclick="plusSlides(1)">
+                <img src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-right-01-512.png" style="width:40px">
+            </a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="Img/2D Platformer/Main Menu.png" style="width:100%" onclick="currentSlide(1)" alt="Main Menu">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Img/2D Platformer/In Game View - Level 1.png" style="width:100%" onclick="currentSlide(2)" alt="In Game View - Level 1">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Img/2D Platformer/In Game View - Level 1(1).png" style="width:100%" onclick="currentSlide(3)" alt="In Game View - Level 1">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Img/2D Platformer/In Game View - Level 1(2).png" style="width:100%" onclick="currentSlide(4)" alt="In Game View - Level 1">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Img/2D Platformer/In Game View - Level 2.png" style="width:100%" onclick="currentSlide(5)" alt="In Game View - Level 2">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Img/2D Platformer/In Game View - Level 3.png" style="width:100%" onclick="currentSlide(6)" alt="In Game View - Level 3">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Img/2D Platformer/In Game View - Level 3(1).png" style="width:100%" onclick="currentSlide(7)" alt="In Game View - Level 3">
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("demo");
+            let captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+    <footer>
+        <div class="copyright"> Created by Mai Naor &copy; ALL OF THE RIGHTS RESERVED</div>
+    </footer>
+</body>
+</html>

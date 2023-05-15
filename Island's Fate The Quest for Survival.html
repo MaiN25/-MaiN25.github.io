@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @import url(https://www.fontspace.com/black-rose-font-f51333);
+        @import url(https://fonts.googleapis.com/css?family=Montserrat);
+        @import url(https://fonts.googleapis.com/css?family=Avenir);
+
+        button {
+            background: none;
+            border: none;
+        }
+
+        .back-btn {
+            display: flex;
+            justify-content: space-between; /* Optional, use any other value as per requirement */
+            align-items: center; /* Optional, use any other value as per requirement */
+            top: 0;
+        }
+
+        .back-link {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+            .back-link:hover {
+                text-decoration: underline;
+            }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .infoContainer {
+            width: 50%;
+            margin-right: 50px;
+        }
+
+
+
+        html {
+            background: no-repeat;
+            background-image: url("Img/BackgroundPages2.png");
+            background-size: cover;
+            background-position: center center;
+        }
+
+        h1 {
+            font: 48px "Black Rose";
+            text-align: center;
+            color: white;
+        }
+
+        .description {
+            margin-left: 20px;
+            font-size: 20px;
+            color: white;
+            text-align: justify;
+        }
+
+            .description div {
+                display: inline;
+            }
+
+            .description p {
+                display: inline;
+                margin-block-start: 1em;
+                margin-block-end: 1em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+            }
+
+        body {
+            font-family: 'Black Rose';
+            margin: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Position the image container (needed to position the left and right arrows) */
+        .imageContainer {
+            position: relative;
+            width: 50%;
+            margin-right: 50px;
+            margin-top: 5%;
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+            display: none;
+        }
+
+        /* Add a pointer when hovering over the thumbnail images */
+        .cursor {
+            cursor: pointer;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 40%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover,
+            .next:hover {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* Container for image text */
+        .caption-container {
+            text-align: center;
+            background-color: #222;
+            padding: 2px 16px;
+            color: white;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Six columns side by side */
+        .column {
+            float: left;
+            width: 11.11%;
+        }
+
+        /* Add a transparency effect for thumnbail images */
+        .demo {
+            opacity: 0.6;
+        }
+
+            .active,
+            .demo:hover {
+                opacity: 1;
+            }
+
+        .links {
+            display: flex;
+            justify-content: space-between; /* Optional, use any other value as per requirement */
+            align-items: center; /* Optional, use any other value as per requirement */
+        }
+
+            .links a {
+                text-decoration: none; /* Optional, use any other value as per requirement */
+                margin-right: 20px; /* Optional, use any other value as per requirement */
+            }
+
+                .links a:last-child {
+                    margin-right: 0; /* Optional, use any other value as per requirement */
+                }
+
+        .copyright {
+            font: 200 14px 'Oswald', sans-serif;
+            color: #555;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+        /* Style for the footer section */
+        footer {
+            background-color: #000000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+            /* Style for the footer text */
+            footer p {
+                margin: 0;
+                font-size: 18px;
+                text-align: center;
+            }
+    </style>
+</head>
+<body>
+    <h1 style="text-shadow: 2px 2px;">Island's Fate The Quest for Survival</h1>
+    <div class="container">
+        <button class="back-btn">
+            <img src="https://icon-library.com/images/back-icon-png/back-icon-png-16.jpg" style="width:40px">
+            <a href="Portfolio.html" class="back-link">Back to Portfolio</a>
+        </button>
+        <div class="infoContainer">
+            <div class="description">
+                <p style="text-align: center; font-size: 32px; text-shadow: 1px 1px 2px black, 0 0 25px green, 0 0 15px black; ">You are stranded on a deserted island after a shipwreck, and your only hope of survival is to navigate your way through the island to find a way to escape. Along the way, you will make crucial decisions that will determine your fate. Will you successfully escape the island, or will you be trapped forever?</p>
+
+                <h2>About the game:</h2>
+                <p>
+                    As the sole developer and designer of the game, I took great care in creating a fully original and engaging experience for the players.
+                    I made sure to only use non-copyrighted 3rd party models, which I then modified to fit my needs and the game's overall aesthetic.
+                    It was a challenging process, but one that I am proud of, and I am excited to see players enjoy the game I have created.
+                    This game, called Island's Fate: The Quest for Survival, was actually an assignment for my AET 339: Intro to Narrative class,
+                    where we had to develop a branching narrative using our knowledge of plot, character development, and storytelling.
+                    The assignment consisted of two parts: pre-writing and drafting/editing. During the pre-writing stage, we created a concept statement and beat flowchart,
+                    and during the drafting/editing phase, we developed a branching narrative with at least two branches. To keep the story engaging, we aimed for 3-5 minutes
+                    per branch, and during the editing phase, we reviewed and revised our work to ensure that it was polished and engaging. Our professor also provided
+                    a workshop for us to receive feedback from our peers.
+                    My goal was to create an adventure story with a feeling of tension and urgency.
+                    I believe that one of the strengths of my game was its simplicity, but I faced challenges in balancing the number of choices and consequences and creating two distinct and
+                    compelling branching paths. Despite the challenges, creating the game itself was a challenging and exciting experience, and I'm proud of what I created.
+                </p>
+            </div>
+            <div class="links">
+                <a href="https://mainaor.itch.io/island-fate-the-quest-for-survival" style="text-align: center">
+                    <h2>Play the game</h2>
+                </a>
+                <a href="Documents/Final Draft.pdf" alt="Final Draft" style="text-align: center">
+                    <h2>Link to The Final Draft</h2>
+                </a>
+                <a href="Documents/Initial Draft.pdf" alt="Initial Draft" style="text-align: center">
+                    <h2>
+                        Link to the Initial Draft
+                    </h2>
+                </a>
+            </div>
+        </div>
+
+        <div class="imageContainer">
+            <div class="mySlides">
+                <div class="numbertext">1 / 9</div>
+                <img src="Img/Island's Fate The Quest for Survival/MainMenu.png" style="width:100%" />
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 9</div>
+                <img src="Img/Island's Fate The Quest for Survival/ChoiceExample.png" style="width:100%" />
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">3 / 9</div>
+                <img src="Img/Island's Fate The Quest for Survival/GameView.png" style="width:100%" />
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">4 / 9</div>
+                <img src="Img/Island's Fate The Quest for Survival/Game Overview.png" style="width:100%" />
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">5 / 9</div>
+                <img src="Img/Island's Fate The Quest for Survival/GameOverScreen.png" style="width:100%" />
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">6 / 9</div>
+                <img src="Img/Island's Fate The Quest for Survival/MainMenuOld.png" style="width:100%" />
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">7 / 9</div>
+                <img src="Img/Island's Fate The Quest for Survival/Start of a game view.png" style="width:100%" />
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">8 / 9</div>
+                <img src="Img/Island's Fate The Quest for Survival/Winning screen.png" style="width:100%" />
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">9 / 9</div>
+                <img src="Img/Island's Fate The Quest for Survival/Village.jpeg" style="width:100%" />
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">
+                <img src="https://icon-library.com/images/back-icon-png/back-icon-png-16.jpg" style="width:40px">
+
+            </a>
+            <a class="next" onclick="plusSlides(1)">
+                <img src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-right-01-512.png" style="width:40px">
+            </a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="Img/Island's Fate The Quest for Survival/MainMenu.png" style="width:100%" onclick="currentSlide(1)" alt="Main Menu">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Img/Island's Fate The Quest for Survival/ChoiceExample.png" style="width:100%" onclick="currentSlide(2)" alt="Choice Example">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Img/Island's Fate The Quest for Survival/GameView.png" style="width:100%" onclick="currentSlide(3)" alt="In Game View">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Img/Island's Fate The Quest for Survival/Game Overview.png" style="width:100%" onclick="currentSlide(4)" alt="Game Overview">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Img/Island's Fate The Quest for Survival/GameOverScreen.png" style="width:100%" onclick="currentSlide(5)" alt="Game Over Screen">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Img/Island's Fate The Quest for Survival/MainMenuOld.png" style="width:100%" onclick="currentSlide(6)" alt="First version of the game menu screen">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Img/Island's Fate The Quest for Survival/Start of a game view.png" style="width:100%" onclick="currentSlide(7)" alt="Start of a game view">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Img/Island's Fate The Quest for Survival/Winning screen.png" style="width:100%" onclick="currentSlide(8)" alt="Winning screen">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Img/Island's Fate The Quest for Survival/Village.jpeg" style="width:100%" onclick="currentSlide(9)" alt="Village">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("demo");
+            let captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+    <footer>
+        <div class="copyright"> Created by Mai Naor &copy; ALL OF THE RIGHTS RESERVED</div>
+    </footer>
+</body>
+</html>

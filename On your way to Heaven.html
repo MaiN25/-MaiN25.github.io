@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Montserrat);
+        @import url(https://fonts.googleapis.com/css?family=Avenir);
+
+        @font-face {
+            font-family: minecraft;
+            src: url(Fonts/SummerPixel22Regular-jE0W7.ttf);
+        }
+
+        button {
+            background: none;
+            border: none;
+        }
+
+        .back-btn {
+            display: flex;
+            justify-content: space-between; /* Optional, use any other value as per requirement */
+            align-items: center; /* Optional, use any other value as per requirement */
+        }
+
+        .back-link {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+            .back-link:hover {
+                text-decoration: underline;
+            }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .infoContainer {
+            width: 50%;
+            margin-right: 50px;
+        }
+
+
+
+        html {
+            background: no-repeat;
+            background-image: url("Img/BackgroundPages2.png");
+            background-size: cover;
+            background-position: center center;
+        }
+
+        h1 {
+            font: 60px "minecraft";
+            text-align: center;
+            margin: 0;
+        }
+        .title1 {
+            top:0;
+            transform: translateY(50px);
+            color:white;
+            text-shadow: 3px 3px black;
+        }
+        .title2 {
+            transform: translateY(2px) translateX(-10px);
+            color: lightblue;
+            text-shadow: 2px 2px black;
+        }
+        .title3 {
+            color: darkkhaki;
+            transform: translateY(-44px) translateX(-20px);
+            text-shadow: 1px 1px white;
+            font-weight: bold;
+        }
+        
+        .description {
+            margin-left: 20px;
+            font-size: 20px;
+            color: aquamarine;
+            text-align: justify;
+        }
+            .description h2 {
+                text-align: center;
+                text-decoration: underline;
+                font-size: 48px;
+                color:gold;
+            }
+            .description p {
+                font-size: 36px;
+                color: lightgoldenrodyellow
+            }
+
+        body {
+            font-family: 'minecraft';
+            margin: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Position the image container (needed to position the left and right arrows) */
+        .imageContainer {
+            position: relative;
+            width: 50%;
+            margin-right: 50px;
+            margin-top: 5%;
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+            display: none;
+        }
+
+        /* Add a pointer when hovering over the thumbnail images */
+        .cursor {
+            cursor: pointer;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 40%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover,
+            .next:hover {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* Container for image text */
+        .caption-container {
+            text-align: center;
+            background-color: #222;
+            padding: 2px 16px;
+            color: white;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+
+        .column {
+            float: left;
+            width: 7.69%;
+        }
+
+        /* Add a transparency effect for thumnbail images */
+        .demo {
+            opacity: 0.6;
+            height: 80px;
+            margin-bottom: 36px;
+        }
+
+            .active,
+            .demo:hover {
+                opacity: 1;
+            }
+
+        .links {
+            display: flex;
+            justify-content: space-between; /* Optional, use any other value as per requirement */
+            align-items: center; /* Optional, use any other value as per requirement */
+        }
+
+            .links a {
+                text-decoration: none; /* Optional, use any other value as per requirement */
+                margin-right: 20px; /* Optional, use any other value as per requirement */
+            }
+
+                .links a:last-child {
+                    margin-right: 0; /* Optional, use any other value as per requirement */
+                }
+
+        .copyright {
+            font: 200 14px 'Oswald', sans-serif;
+            color: #555;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+        /* Style for the footer section */
+        footer {
+            background-color: #000000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 25.5px;
+            bottom: 0;
+            height: fit-content;
+        }
+
+            /* Style for the footer text */
+            footer p {
+                margin: 0;
+                font-size: 18px;
+                text-align: center;
+            }
+    </style>
+</head>
+<body>
+    <h1 class="title1">On your way to Heaven</h1>
+    <h1 class="title2">On your way to Heaven</h1>
+    <h1 class="title3">On your way to Heaven</h1>
+    <div class="container">
+        <button class="back-btn">
+            <img src="https://icon-library.com/images/back-icon-png/back-icon-png-16.jpg" style="width:40px">
+            <a href="Portfolio.html" class="back-link">Back to Portfolio</a>
+        </button>
+        <div class="infoContainer">
+            <div class="description">
+
+                <h2>About the game</h2>
+                <p>
+                    I completed this game as part of AET 319 course at UT Austin.
+                    The game's code and mechanism were provided to us by the course instructors. Our task was to develop a game that
+                    conveyed a narrative solely through visual and subtle storytelling techniques without modifying the provided
+                    code nor mechanism nor adding UI elements.
+                    The game's storyline follows Angie, an optimistic angel who sets out on a mission to reach heaven. She navigates through a challenging obstacle course in hell to reunite with her loved ones in heaven. Join us in helping Angie on her journey!
+                </p>
+            </div>
+            <div>
+                <a href="https://mainaor.itch.io/aet-319-2d-platformer" style="text-align: center; color: black; font-size:28px">
+                    <h2>Play the game</h2>
+                </a>
+            </div>
+        </div>
+
+        <div class="imageContainer">
+            <div class="mySlides">
+                <div class="numbertext">1 / 13</div>
+                <img src="Img/On your way to Heaven/SplashScreen.png" style="width: 100%; height: 450px" />
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">2 / 13</div>
+                <img src="Img/On your way to Heaven/Entire Game Overview.png" style="width: 100%; height: 450px" />
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">3 / 13</div>
+                <img src="Img/On your way to Heaven/LevelDesign.png" style="width: 100%; height: 450px" />
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">4 / 13</div>
+                <img src="Img/On your way to Heaven/NarrativeDesign.png" style="width: 100%; height: 450px" />
+
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">5 / 13</div>
+                <img src="Img/On your way to Heaven/VisualDesign.png" style="width: 100%; height: 450px" />
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 13</div>
+                <img src="Img/On your way to Heaven/Initial art integration.png" style="width: 100%; height: 450px" />
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">7 / 13</div>
+                <img src="Img/On your way to Heaven/Adding Colors.png" style="width: 100%; height: 450px" />
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">8 / 13</div>
+                <img src="Img/On your way to Heaven/Narrative elements in process.png" style="width: 100%; height: 450px" />
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">9 / 13</div>
+                <img src="Img/On your way to Heaven/Third Stage in process.png" style="width: 100%; height: 450px" />
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">10 / 13</div>
+                <img src="Img/On your way to Heaven/Adding another stage.png" style="width: 100%; height: 450px" />
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">11 / 13</div>
+                <img src="Img/On your way to Heaven/Rest area 1 in process.png" style="width: 100%; height: 450px" />
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">12 / 13</div>
+                <img src="Img/On your way to Heaven/First stage in process after playtest.png" style="width: 100%; height: 450px" />
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">13 / 13</div>
+                <img src="Img/On your way to Heaven/Initial Game.png" style="width: 100%; height: 450px" />
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">
+                <img src="https://icon-library.com/images/back-icon-png/back-icon-png-16.jpg" style="width:40px">
+
+            </a>
+            <a class="next" onclick="plusSlides(1)">
+                <img src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-right-01-512.png" style="width:40px">
+            </a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="Img/On your way to Heaven/SplashScreen.png" style="width:100%" onclick="currentSlide(1)" alt="Splash Screen">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Img/On your way to Heaven/Entire Game Overview.png" style="width:100%" onclick="currentSlide(2)" alt="Entire Game Overview">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Img/On your way to Heaven/LevelDesign.png" style="width:100%" onclick="currentSlide(3)" alt=" Callout Sheets - Level Design">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Img/On your way to Heaven/NarrativeDesign.png" style="width:100%" onclick="currentSlide(4)" alt="Callout Sheets - Narrative Design">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Img/On your way to Heaven/VisualDesign.png" style="width:100%" onclick="currentSlide(5)" alt="Callout Sheets - Visual Design">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Img/On your way to Heaven/Initial art integration.png" style="width:100%" onclick="currentSlide(6)" alt="First stage initial art integration">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Img/On your way to Heaven/Adding Colors.png" style="width:100%" onclick="currentSlide(7)" alt="Adding color palette to the game">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Img/On your way to Heaven/Narrative elements in process.png" style="width:100%" onclick="currentSlide(8)" alt="Adding storytelling elements">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Img/On your way to Heaven/Third Stage in process.png" style="width:100%" onclick="currentSlide(9)" alt="Third zone in process">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Img/On your way to Heaven/Adding another stage.png" style="width:100%" onclick="currentSlide(10)" alt="Adding another game zone">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Img/On your way to Heaven/Rest area 1 in process.png" style="width:100%" onclick="currentSlide(11)" alt="Adding rest area between stages">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Img/On your way to Heaven/First stage in process after playtest.png" style="width:100%" onclick="currentSlide(12)" alt="First stage in process after first playtest.png">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Img/On your way to Heaven/Initial Game.png" style="width:100%" onclick="currentSlide(13)" alt="The First progress check'">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("demo");
+            let captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+    <footer>
+        <div class="copyright"> Created by Mai Naor &copy; ALL OF THE RIGHTS RESERVED</div>
+    </footer>
+</body>
+</html>
